@@ -1,0 +1,88 @@
+name: bden
+description: "BDEN - Blood Donation Emergency Network"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Firebase
+  firebase_core: ^3.0.0
+  firebase_auth: ^5.0.0
+  cloud_firestore: ^5.0.0
+  firebase_storage: ^12.0.0
+  google_sign_in: ^6.2.1
+
+  # State & Navigation
+  get: ^4.6.6
+  go_router: ^14.0.0
+  get_storage: ^2.1.1
+
+  # UI & Design
+  google_fonts: ^6.2.1
+  flutter_animate: ^4.5.0
+  gap: ^3.0.1
+  hugeicons: ^0.0.7
+  loading_animation_widget: ^1.2.1
+  dotted_border: ^2.1.0
+  cached_network_image: ^3.3.1
+  fl_chart: ^0.68.0
+
+  # Media
+  image_picker: ^1.1.2
+
+  # Utils
+  timeago: ^3.7.0
+  uuid: ^4.4.0
+  intl: ^0.19.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  flutter_launcher_icons: ^0.14.1
+  flutter_native_splash: ^2.4.1
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/images/app/
+
+flutter_native_splash:
+  color: "#FFFFFF"
+  color_dark: "#01002B"
+  android: true
+  ios: true
+  web: false
+  android_12:
+    color: "#FFFFFF"
+    color_dark: "#01002B"
+    image: "assets/images/app/android12_splash.png"
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  remove_alpha_ios: true
+  image_path: "assets/images/app/app_icon.png"
+  min_sdk_android: 21
+  adaptive_icon_foreground: "assets/images/app/app_icon.png"
+  adaptive_icon_background: "#FFFFFF"
+  adaptive_icon_monochrome: "assets/images/app/app_icon.png"
+  web:
+    generate: true
+    image_path: "assets/images/app/app_icon.png"
+    background_color: "#FFFFFF"
+    theme_color: "#EA4335"
+  windows:
+    generate: true
+    image_path: "assets/images/app/app_icon.png"
+    icon_size: 48
+  macos:
+    generate: true
+    image_path: "assets/images/app/app_icon.png"
