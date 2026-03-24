@@ -1,0 +1,28 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "bden-f203e",
+          "appId": "1:1073269260424:android:38aeebd483b213fb99df3d",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "bden-f203e",
+          "configurations": {
+            "android": "1:1073269260424:android:38aeebd483b213fb99df3d",
+            "ios": "1:1073269260424:ios:db5708f28dd82c5299df3d"
+          }
+        }
+      }
+    }
+  },
+  "firestore": {
+    "database": "(default)",
+    "location": "africa-south1",
+    "rules": "firestore.rules",
+    "indexes": "firestore.indexes.json"
+  }
+}
